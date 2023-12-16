@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "scripts": {
     "dev": "blitz dev",
+    "format": "prettier --write .",
     "build": "blitz build",
     "start": "blitz start",
     "studio": "blitz prisma studio",
@@ -15,7 +16,7 @@
     "schema": "db/schema.prisma"
   },
   "prettier": {
-    "semi": false,
+    "semi": true,
     "printWidth": 100
   },
   "lint-staged": {
