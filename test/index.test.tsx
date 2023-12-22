@@ -16,7 +16,7 @@ test.skip("renders blitz documentation link", () => {
   // when you remove the default content from the page
 
   // This is an example on how to mock api hooks when testing
-  vi.mock("src/users/hooks/useCurrentUser", () => ({
+  vi.mock("src/features/hooks/useCurrentUser", () => ({
     useCurrentUser: () => ({
       id: 1,
       name: "User",

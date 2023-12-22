@@ -1,5 +1,6 @@
 import { Routes } from "@blitzjs/next";
 import { useMutation } from "@blitzjs/rpc";
+import { Button } from "@mantine/core";
 import Link from "next/link";
 
 import logout from "@/features/auth/mutations/logout";
@@ -12,14 +13,14 @@ const UserInfo = () => {
   if (currentUser) {
     return (
       <>
-        <button
+        <Button
           className=""
           onClick={async () => {
             await logoutMutation();
           }}
         >
           Logout
-        </button>
+        </Button>
         <div>
           User id: <code>{currentUser.id}</code>
           <br />
