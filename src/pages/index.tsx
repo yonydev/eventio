@@ -1,9 +1,8 @@
 import { BlitzPage } from "@blitzjs/next";
 import { Suspense } from "react";
 
+import UserInfo from "@/core/components/UserInfo";
 import Layout from "@/core/layouts/Layout";
-
-import UserInfo from "@/components/UserInfo";
 
 const Home: BlitzPage = () => {
   return (
