@@ -21,8 +21,7 @@
     "importOrderSeparation": true,
     "importOrder": [
       "^@/core/(.*)$",
-      "^@/auth/(.*)$",
-      "^@/users/(.*)$",
+      "^@/features/(.*)$",
       "^@/components/(.*)$",
       "^@/utils/(.*)$",
       "^[./]"
