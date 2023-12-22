@@ -3,11 +3,13 @@ import { useMutation } from "@blitzjs/rpc";
 import { assert } from "blitz";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import resetPassword from "src/auth/mutations/resetPassword";
-import { ResetPassword } from "src/auth/schemas";
-import { FORM_ERROR, Form } from "src/core/components/Form";
-import { LabeledTextField } from "src/core/components/LabeledTextField";
-import Layout from "src/core/layouts/Layout";
+
+import { FORM_ERROR, Form } from "@/core/components/Form";
+import { LabeledTextField } from "@/core/components/LabeledTextField";
+import Layout from "@/core/layouts/Layout";
+
+import resetPassword from "@/features/auth/mutations/resetPassword";
+import { ResetPassword } from "@/features/auth/schemas";
 
 const ResetPasswordPage: BlitzPage = () => {
   const router = useRouter();
